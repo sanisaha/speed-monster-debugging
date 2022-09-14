@@ -38,7 +38,16 @@
         <section class="border border-dark text-white p-4">
             <div>
                 <h3 class="fw-bold">3.How does event loop works?</h3>
-                <p></p>
+                <p>The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from
+                    the Task Queue to the Call Stack.
+                    (A stack is a data structure in which the last element added is always the first to be removed from
+                    the stack, you could think of it as a stack of a plate in which only the first plate which was the
+                    last added can be removed first. A Call Stack is simply nothing but a stack data structure where
+                    tasks or code is being executed accordingly.)
+                    Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks.
+                    If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and
+                    repeats the same process.
+                </p>
             </div>
         </section>
         <section class="border border-dark text-white p-4">
